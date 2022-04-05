@@ -84,7 +84,7 @@ Nous devons avoir la possibilité de naviguer d'une page à l'autre, sans rechar
 
 C'est la même chose que Laravel, sauf qu'ici le routeur est côté client, nous devons définir nos routes côté client et avoir moyen d'en changer.
 
-Cela tombe bien, Vue a un routeur tout prêt que nous allons utiliser, [vue-router](https://router.vuejs.org/fr/)
+Cela tombe bien, Vue a un routeur tout prêt que nous allons utiliser, [vue-router](https://v3.router.vuejs.org/)
 
 ##### 4.1) Installation.
 
