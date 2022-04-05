@@ -416,13 +416,13 @@ Faites un formulaire qui permet d'ajouter un nouveau fournisseur et utilisez l'A
 
 Faites la même chose pour une modification ou suppression de fournisseur. ( Attention à ne pas tout supprimer, vous travaillez tous sur la même base de données !).
 
-### 10) Packager l'application en PWA.
-
-Voir prochain sujet.
-
-### 11) Aller ( encore ) plus loin.
+### 10) Aller ( encore ) plus loin.
 
 Utilisation d'une api paginée plus complete ayant des relations : 
 - Suppliers, Customers, Resellers, Orders
 - la doc [ici](https://alexcampus.github.io/api-suppliers-doc/)
 - l'api [ici](https://heroku-campus-suppliers.herokuapp.com/api/suppliers)
+
+### 11) Packager l'application en PWA.
+
+Voir le sujet bonus.
