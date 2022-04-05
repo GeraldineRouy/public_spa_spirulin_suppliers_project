@@ -422,6 +422,7 @@ Voir prochain sujet.
 
 ### 11) Aller ( encore ) plus loin.
 
-Utilisation d'une api plus complete ayant des relations 
-la doc [ici](https://alexcampus.github.io/api-suppliers-doc/)
-l'api [ici](https://heroku-campus-suppliers.herokuapp.com/api/suppliers)
+Utilisation d'une api paginée plus complete ayant des relations : 
+- Suppliers, Customers, Resellers, Orders
+- la doc [ici](https://alexcampus.github.io/api-suppliers-doc/)
+- l'api [ici](https://heroku-campus-suppliers.herokuapp.com/api/suppliers)
