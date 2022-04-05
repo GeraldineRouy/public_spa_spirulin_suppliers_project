@@ -422,6 +422,6 @@ Voir prochain sujet.
 
 ### 11) Aller ( encore ) plus loin.
 
-Laravel et Vue ayant une très bonne intégration, refaites l'API avec LARAVEL.
-
-Vous pouvez y ajouter un système d'authentification permettant de ne voir les fournisseurs que si vous êtes connecté, et n'autorisant la création/modification/suppression que si l'utilisateur a un rôle d'admin [DOC](https://laravel.com/docs/5.6/passport)
+Utilisation d'une api plus complete ayant des relations 
+la doc [ici](https://alexcampus.github.io/api-suppliers-doc/)
+l'api [ici](https://heroku-campus-suppliers.herokuapp.com/api/suppliers)
