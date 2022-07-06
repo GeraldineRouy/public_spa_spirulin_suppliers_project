@@ -88,7 +88,13 @@ Cela tombe bien, Vue a un routeur tout prêt que nous allons utiliser, [vue-rout
 
 ##### 4.1) Installation.
 
-Faites l'installation avec npm comme décrite dans la documentation. N'oublier pas d'ajouter après l'installation ces deux lignes :
+Faites l'installation avec npm comme décrite dans la documentation. 
+
+```
+npm install vue-router@3
+```
+
+N'oublier pas d'ajouter après l'installation ces deux lignes :
 
 ```
 import VueRouter from 'vue-router'
