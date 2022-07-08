@@ -316,9 +316,11 @@ Fin du préambule
 
 
 
-Nous avons créé pour vous une API REST permettant de gérer vos fournisseurs. Cette api est disponible à cette url : [https://api-suppliers.herokuapp.com/api](https://api-suppliers.herokuapp.com/api). Et la documentation [ici](https://api-suppliers.herokuapp.com/).
+Nous avons créé pour vous une API REST permettant de gérer vos fournisseurs. La documentation de cette api est disponible [ici](https://alexcampus.github.io/api-suppliers-doc/).
 
-Par exemple pour lister l'ensemble des fournisseurs il faudra appeler [cette URL](https://api-suppliers.herokuapp.com/api/suppliers)
+Par exemple pour lister l'ensemble des fournisseurs il faudra appeler [cette URL](https://heroku-campus-suppliers.herokuapp.com/api/suppliers)
+
+Dans un premier temps, vous vous occuperez seulement des fournisseurs et vous ne vous occuperez pas de la pagination.
 
 Si vous faites le test, vous verrez que le résultat n'est pas très lisible. La réponse de l'API est au format [JSON](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Objects/JSON), un standard dans le monde du web.
 
@@ -424,10 +426,12 @@ Faites la même chose pour une modification ou suppression de fournisseur. ( Att
 
 ### 10) Aller ( encore ) plus loin.
 
-Utilisation d'une api paginée plus complete ayant des relations : 
-- Suppliers, Customers, Resellers, Orders
-- la doc [ici](https://alexcampus.github.io/api-suppliers-doc/)
-- l'api [ici](https://heroku-campus-suppliers.herokuapp.com/api/suppliers)
+Utiliser les autres endpoints de l'API : 
+- Customers, Resellers, Orders
+
+Utiliser la pagination de l'API sur votre projet.
+
+Mettre en oeuvre les relations présentes dans l'API.
 
 ### 11) Packager l'application en PWA.
 
