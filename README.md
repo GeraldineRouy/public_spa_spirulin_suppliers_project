@@ -320,7 +320,7 @@ Nous avons créé pour vous une API REST permettant de gérer vos fournisseurs. 
 
 Par exemple pour lister l'ensemble des fournisseurs il faudra appeler [cette URL](https://heroku-campus-suppliers.herokuapp.com/api/suppliers)
 
-Dans un premier temps, vous vous occuperez seulement des fournisseurs et vous ne vous occuperez pas de la pagination.
+Dans un premier temps, vous vous occuperez seulement des fournisseurs(Suppliers) et vous ne vous occuperez pas de la pagination.
 
 Si vous faites le test, vous verrez que le résultat n'est pas très lisible. La réponse de l'API est au format [JSON](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Objects/JSON), un standard dans le monde du web.
 
