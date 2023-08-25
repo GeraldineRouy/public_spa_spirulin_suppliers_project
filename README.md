@@ -18,46 +18,8 @@ Vous êtes le gérant d'un site ecommerce, ce site vend un produit unique : de l
 ![](images/preview.gif)
 
 ### 1) Initialiser une application Vue.
-
-- Commençons par créer une application VueJS, pour cela utilisons l'interface en ligne de commande officielle `vue-cli`.
-
-Si ce n'est pas fait, il faut d'abord l'installer avec npm :
-
-```
-npm install --global @vue/cli
-```
-
-**Question :** Rappelez ce qu'est npm et pourquoi nous utilisons l'option `--global` ?
-
-**Votre réponse :**
-
-Vérfier que la version de Vue CLI installée est au moins la version 3 :
-
-```
-vue --version
-```
-
-Si jamais vous avez un message de type : "Command not found", vous pouvez suivre [ce tuto](https://www.technig.com/solve-vue-command-not-found-windows/)
-
-- Créez maintenant l'application :
-
-```
-vue create NOM_PROJET
-```
-
-Si des questions vous sont posées, choisissez les options par défaut.
-
-**Question :** Quels sont les bons réflexes à avoir quand vous téléchargez un nouveau projet ? Quels fichiers regarder en priorité ?
-
-**Votre réponse :**
-
-Avant même de commencer à lancer l'application et sans regarder le code vous pouvez apprendre plein de choses. Prenez cette habitude.
-
-**Question :** Regardez le fichier `README.md`, quelle est la commande que nous allons utiliser pour travailler le projet ?
-
-**Votre réponse :**
-
-- Lancez le projet.
+En vous servant de vos notes de l'exercice précédent initialiser un nouveau projet Vue.
+En se rendant sur la documentation de [VueJS](https://vuejs.org/guide/quick-start.html#creating-a-vue-application), vous suivrez ce qui vous est proposé.
 
 ### 2) Écran d'accueil.
 
@@ -84,38 +46,21 @@ Nous devons avoir la possibilité de naviguer d'une page à l'autre, sans rechar
 
 C'est la même chose que Laravel, sauf qu'ici le routeur est côté client, nous devons définir nos routes côté client et avoir moyen d'en changer.
 
-Cela tombe bien, Vue a un routeur tout prêt que nous allons utiliser, [vue-router](https://v3.router.vuejs.org/)
+Cela tombe bien, Vue a un routeur tout prêt que nous allons utiliser, [vue-router](https://router.vuejs.org/)
 
 ##### 4.1) Installation.
 
 Faites l'installation avec npm comme décrite dans la documentation. 
 
-```
-npm install vue-router@3
-```
-
-N'oublier pas d'ajouter après l'installation ces deux lignes :
-
-```
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
-```
 
 ##### 4.2) Configuration.
 
+En vous servant de la documentation du VueRouter, faire les etapes suivantes : 
 Nous voulons déclarer deux routes, une `/suppliers` avec la liste des fournisseurs et une `/map` qui contiendra la carte.
 
-- Déclarez votre tableau de route dans le fichier `index.js` du répertoire `router` en faisant référence aux composants créés avant.
+- Déclarez vos routes  en faisant référence aux composants créés avant.
 
-- Initialisez l'objet router de Vue contenant ces routes et injectez-le dans la création de l'app Vue, votre code doit ressembler à :
-
-```
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount("#app");
-```
+- Initialisez l'objet router de Vue contenant ces routes et injectez-le dans la création de l'app Vue
 
 - Supprimez maintenant les composants `SuppliersList` et `SuppliersMap` du template de notre composant `App.vue`.
 
@@ -136,7 +81,8 @@ Voici le résultat que vous devriez obtenir : [GIF](http://recordit.co/26PagUagE
 
 ### 5) Création d'un composant pour représenter un fournisseur.
 
-A ce stade, la liste de fournisseurs est vide, il n'y a donc pas de navigation possible à partir de la liste. Nous allons cependant créer la vue détaillée d'un fournisseur, qui pourra être rendue accessible soit via un bouton `<router-link to="..." ></router-link>` (temporaire) ou en saisissant l'URL directement comme indiqué en fin de section.
+A ce stade, la liste de fournisseurs est vide, il n'y a donc pas de navigation possible à partir de la liste.  
+Nous allons cependant créer la vue détaillée d'un fournisseur, qui pourra être rendue accessible soit via un bouton `<router-link to="..." ></router-link>` (temporaire) ou en saisissant l'URL directement comme indiqué en fin de section.
 
 ##### 5.1) Composant statique dans une nouvelle route.
 
@@ -244,8 +190,8 @@ Maintenant, essayons de visualiser les différents fournisseurs sur une carte, c
 
 Pour afficher une carte nous allons utiliser le fond de carte OpenStreetMap avec la librairie Leaflet, grâce à un package spécialement créé pour Vue.
 
-Ce package, **Vue2Leaflet**,  est disponible à [cette adresse](https://github.com/vue-leaflet/Vue2Leaflet).
-➡️ Ajoutez cette libraire à votre projet en reprenant cet exemple : https://github.com/Romainpetit/leaflet-vue
+Ce package, **Vue2Leaflet**,  est disponible à [cette adresse](https://github.com/vue-leaflet/vue-leaflet).
+➡️ Ajoutez cette libraire à votre projet en vous inspirant de cet exemple pour Vue2 : https://github.com/Romainpetit/leaflet-vue
 
 **Question :** Cherchez puis listez au minimum 3 autres packages qui permettraient d'afficher une carte en javascript. Quels sont leur différences avec Leaflet pour OpenStreetMap ?
 
