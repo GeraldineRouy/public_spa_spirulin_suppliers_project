@@ -264,7 +264,7 @@ Fin du préambule
 
 Nous avons créé pour vous une API REST permettant de gérer vos fournisseurs. La documentation de cette api est disponible [ici](https://alexcampus.github.io/api-suppliers-doc/).
 
-Par exemple pour lister l'ensemble des fournisseurs il faudra appeler [cette URL](https://heroku-campus-suppliers.herokuapp.com/api/suppliers)
+Par exemple pour lister l'ensemble des fournisseurs il faudra appeler [cette URL](https://suppliers.depembroke.fr/api/suppliers)
 
 Dans un premier temps, vous vous occuperez seulement des fournisseurs(Suppliers) et vous ne vous occuperez pas de la pagination.
 
@@ -302,7 +302,7 @@ Prenez toujours le temps d'analyser cette librairie sur github, qu'est ce qui vo
 
 ##### 8.3) Utilisation dans le projet.
 
-Nous allons afficher la liste des fournisseurs provenant de cette [route](https://api-suppliers.herokuapp.com/api/suppliers).
+Nous allons afficher la liste des fournisseurs provenant de cette [route](https://suppliers.depembroke.fr/api/suppliers).
 
 Comme vous le savez une promesse a plusieurs états :
 
@@ -328,7 +328,7 @@ data: function() {
 
 Avant d'aller plus loin, il faut choisir quand lancer la requête, la solution communément admise est de dire : "Quand le composant est créé, lance la requête".
 
-Vuejs nous permet de déclencher des actions ( ou _hooks_ ) à certains moments précis de la vie d'un composant. La liste est disponible [ici](https://fr.vuejs.org/v2/api/index.html#Options-Cycle-de-vie-des-hooks). Celui qui nous intéresse est le `created`.
+Vuejs nous permet de déclencher des actions ( ou _hooks_ ) à certains moments précis de la vie d'un composant. La liste est disponible [ici](https://vuejs.org/guide/essentials/lifecycle.html#lifecycle-diagram). Celui qui nous intéresse est le `created`.
 
 - Ajoutez donc l'appel http avec axios permettant d'afficher la liste des fournisseurs.
 
@@ -378,7 +378,3 @@ Utiliser les autres endpoints de l'API :
 Utiliser la pagination de l'API sur votre projet.
 
 Mettre en oeuvre les relations présentes dans l'API.
-
-### 11) Packager l'application en PWA.
-
-Voir le sujet bonus.
