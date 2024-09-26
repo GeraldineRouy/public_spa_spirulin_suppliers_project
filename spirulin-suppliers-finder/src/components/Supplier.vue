@@ -1,13 +1,6 @@
 <script>
 export default {
   name: "Supplier",
-  data () {
-    return {
-      name: 'John Doe',
-      status: false,
-      checkedAt: new Date(),
-    }
-  },
   computed: {
     formatedCheckedAt() {
       return this.checkedAt.toLocaleString('fr-FR', {
@@ -20,18 +13,18 @@ export default {
         second: '2-digit'
       })
     }
+  },
+  props: {
+    name: String,
+    status: Boolean,
+    checkedAt: Date
   }
 }
 
 </script>
 
 <template>
-  <div>
-    <h2>{{name}}</h2>
-    <p v-if="status">Stock OK :-)</p>
-    <p v-else>Stock KO :-(</p>
-    <p>Dernière mise à jour du stock : {{ formatedCheckedAt }}</p>
-  </div>
+
 
 </template>
 
