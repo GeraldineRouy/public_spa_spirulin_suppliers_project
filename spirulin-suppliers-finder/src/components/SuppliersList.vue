@@ -1,9 +1,12 @@
 <script>
-export default {}
+export default {
+  name: "SuppliersList"
+}
 </script>
 
 <template>
-  <h2>Ceci est la liste des fournisseurs.</h2>
+  <h2>Liste des fournisseurs</h2>
+  <p>Ceci est la liste des fournisseurs.</p>
 
 </template>
 

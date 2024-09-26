@@ -3,10 +3,12 @@ export default {
   name: "Home",
   methods: {
     onSuppliersListClick() {
-      alert('Vous avez cliqué sur le bouton pour afficher la liste des fournisseurs.');
+      // alert('Vous avez cliqué sur le bouton pour afficher la liste des fournisseurs.');
+      this.$router.push({ name: 'SuppliersList' });
     },
     onMapClick() {
-      alert('Vous avez cliqué sur le bouton pour afficher la carte.')
+      // alert('Vous avez cliqué sur le bouton pour afficher la carte.')
+      this.$router.push({ name: 'Map' });
     }
   }
 }
@@ -17,9 +19,9 @@ export default {
   <div>
     <h1>Accueil</h1>
 
-    <button @click="onSuppliersListClick">Voir la liste des fournisseurs</button>
+<!--    <button @click="onSuppliersListClick">Voir la liste des fournisseurs</button>-->
 
-    <button @click="onMapClick">Voir la carte</button>
+<!--    <button @click="onMapClick">Voir la carte</button>-->
 
   </div>
 
