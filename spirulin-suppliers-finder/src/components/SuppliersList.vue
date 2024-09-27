@@ -30,29 +30,16 @@ export default {
 
   <div v-for="supplier in suppliers">
 
-    <h2>{{supplier.name}}</h2>
-
-    <span :class="{'isOK': supplier.status, 'isNotOk': !supplier.status}">
-      <strong v-if="supplier.status">Stock OK :-)</strong>
-      <strong v-else>Stock KO :-(</strong>
-    </span>
-
-    <p>Dernière mise à jour du stock : {{ formatedCheckedAt }}</p>
+    <Supplier
+      :name="supplier.name"
+      :status="supplier.status"
+      :checkedAt="supplier.checkedAt"
+      />
 
   </div>
 
 </template>
 
 <style scoped>
-
-.isOK{
-  color: green;
-  font-weight: bold;
-}
-
-.isNotOk{
-  color: red;
-  font-weight: bold;
-}
 
 </style>
