@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="supplierCard">
     <h3>{{ name }}</h3>
     <p>Status:
       <span :class="{'isOK': status, 'isNotOk': !status}">{{ status ? 'Stock OK :-) ' : 'Stock KO :-( ' }}</span>
@@ -27,6 +27,7 @@ export default {
 </template>
 
 <style scoped>
+
 .isOK{
   color: green;
   font-weight: bold;
@@ -35,4 +36,17 @@ export default {
   color: red;
   font-weight: bold;
 }
+
+.supplierCard{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  background: #f9f9f9;
+  transition: transform 0.2s ease-in-out;
+}
+.supplierCard:hover{
+  transform: translateY(-5px);
+}
+
 </style>
