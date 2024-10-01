@@ -42,7 +42,7 @@ export default {
   border-radius: 8px;
   padding: 20px;
   margin: 20px 0;
-  background: #f9f9f9;
+  background: #404040;
   transition: transform 0.2s ease-in-out;
 }
 .supplierCard:hover{
