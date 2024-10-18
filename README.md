@@ -83,7 +83,7 @@ axios.get('https://api.example.com/suppliers')
 
    const map = L.map('map').setView([latitude, longitude], zoomLevel);
    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-```
+   ```
 
 ## License
 This project is the property of **Campus Numérique In The Alps Grenoble**. All rights reserved.
